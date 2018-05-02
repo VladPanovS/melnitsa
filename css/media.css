@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  /*ENTERTAIMENT*/
+  .entertaiment-list > li:first-child {
+    display: none;
+  }
+  .entertaiment-list > li:last-child {
+    left: 0;
+    width: calc(100% - 4px);
+  }
+
+}

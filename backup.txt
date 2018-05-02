@@ -1,0 +1,31 @@
+.contact-list-map li {
+  position: relative;
+  display: inline-block;
+  width: calc(50% - 4px);
+  height: 30em;
+}
+.contact-list-map li:first-child {
+  left: 2em;
+  top: 0;
+}
+.overlay {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #c8102e;
+  opacity: 0.8;
+  transition: display 1s linear;
+}
+.contact-list-map li:first-child:hover .overlay {
+  display: none;
+}
+.contact-list-map li:last-child {
+  background: #dcdcdc;
+  left: -2em;
+  top: 0;
+  text-align: center;
+  /*clip-path: polygon(0% 0%, 75% 0, 95% 100%, 0% 100%);*/
+}

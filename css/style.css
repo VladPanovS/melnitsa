@@ -1,0 +1,270 @@
+/*---GENERAL STYLES---*/
+* {
+  outline: none;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: #efefef;
+}
+section {
+}
+a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s linear;
+}
+a:visited {
+}
+a:hover {
+  color: #c8102e;
+}
+a:active {
+  color: #bbb;
+}
+.title {
+  font-family: 'Marck Script', cursive;
+  font-size: 2.2em;
+  margin: 0.5em;
+}
+.button {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 500;
+  width: calc(13rem - 4px);
+  background: #000;
+  display: inline-block;
+  line-height: 4;
+  margin: 5px;
+}
+.button:hover {
+  color: #fff;
+  background: #c8102e;
+}
+.underline::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30%;
+  margin: 1em 35%;
+  background: #c8102e;
+}
+/*--------LISTS------------*/
+.lists {
+  display: inline-block;
+  text-align: center;
+  min-width: 20em;
+  width: 80%;
+}
+.lists li {
+  display: inline-block;
+  min-width: calc(18em - 4px);
+  width: calc(48% - 4px);
+  text-align: center;
+  vertical-align: middle;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+.lists p {
+  margin: 0 5%;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 2;
+  text-align: left;
+  margin-bottom: 1em;
+}
+.lists li img {
+  width: 100%;
+}
+/*--------------------
+font-family: 'Marck Script', cursive;
+red-color: #c8102e;
+----------------------*/
+
+header {
+  min-height: 100vh;
+  height: 100vh;
+}
+.logo-nav-phone {
+  background: #dcdcdc;
+  width: 92%;
+  margin: 2%;
+  padding: 0 2%;
+  position: fixed;
+  z-index: 100;
+}
+.logo, h1, nav, .phone {
+  display: inline-block;
+  vertical-align: middle;
+}
+/*---PRESENTATION---*/
+.presentation {
+  text-align: center;
+}
+.main-title {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.6em;
+  text-align: center;
+}
+.presentation p {
+  margin: 0 5%;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+.presentation-list li:first-child {
+  position: relative;
+  border: 1px solid rgba(187, 187, 187, 0.3);
+  z-index: 3;
+}
+.presentation-list p {
+  text-align: left;
+}
+/*---CAFE---*/
+.cafe::before {
+  content: "" url("../img/items/item_one.png");
+  position: absolute;
+  top: -7em;
+  right: -15em;
+  transform: rotate(-33deg);
+  z-index: -1;
+}
+.cafe {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+.cafe-list li:last-child {
+  padding: 5em 1%;
+  background: #fff;
+  border: 1px solid rgba(187, 187, 187, 0.3);
+}
+/*---HALL ROOM---*/
+.hall-room {
+  text-align: center;
+  min-height: 40em;
+}
+.hallbg-title {
+  position: relative;
+  display: inline-block;
+  min-width: calc(20em - 4px);
+  width: calc(80% - 4px);
+  height: 30em;
+  background: url("../img/bg/hall_bg.png") no-repeat center center;
+  background-size: cover;
+}
+.hall-titlebox {
+  position: absolute;
+  bottom: -9em;
+  left: 8%;
+  background: #fff;
+  padding: 5em 2%;
+  min-width: 15em;
+  width: 80%;
+  text-align: center;
+}
+/*---ENTERTAIMENT---*/
+.entertaiment {
+  text-align: center;
+}
+.entertaiment-list > li:first-child {
+  position: relative;
+  left: 3em;
+}
+.entertaiment-list > li:last-child {
+  background: #fff;
+  position: relative;
+  left: -3em;
+}
+.cost-free-list {
+  text-align: center;
+}
+.cost-free-list li{
+  display: inline-block;
+  min-width: 10em;
+  width: calc(48% - 4px);
+  vertical-align: top;
+}
+.cost-free-list h3 {
+  font-weight: 500;
+}
+.cost-free-list p::before {
+  content: "- ";
+}
+/*---FEEDBACK---*/
+/*---CONTACTS---*/
+.contacts {
+  text-align: center;
+}
+.contacts h3 {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #353535;
+  text-transform: uppercase;
+}
+.contact-list-socials li {
+  display: inline-block;
+  min-width: calc(12em - 4px);
+  width: calc(30% - 4px);
+  margin: 5px;
+  height: 15em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.contact-list-socials li > div {
+  height: 80%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.contact-list-socials li:first-child img, .contact-list-socials li:nth-child(2) img, .contact-list-socials li:last-child img {
+  margin-top: -75px;
+  width: 401px;
+  height: 500px;
+}
+.contact-list-socials a {
+  line-height: 1.5;
+  color: #bbb;
+}
+.contact-list-socials a:hover {
+  color: #c8102e;
+}
+.contacts h4 {
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.contact-list-map li {
+  display: inline-block;
+  min-width: calc(20em - 4px);
+  width: calc(50% - 4px);
+  height: calc(30em - 4px);
+  background: #dcdcdc;
+  vertical-align: top;
+}
+.contact-list-map li > div {
+  margin: 2em;
+  border: 2px solid #fff;
+  height: calc(100% - 4em);
+  text-align: center;
+}
+.contact-list-map .title {
+  font-family: "Montserrat";
+  font-weight: 100;
+}
+.contact-list-map p {
+  line-height: 2;
+  margin-bottom: 1.5em;
+}
+/*----------ICONS------------*/
+.presentation .fa-bed, .cafe .fa-utensils, .hall-room .fa-home, .entertaiment .fa-volleyball-ball {
+  font-size: 3rem;
+  color: #c8102e;
+}
+.contact-icon {
+  font-size: 1.5em;
+}
+/*----------------------*/
