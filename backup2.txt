@@ -1,0 +1,1 @@
+.presentation-list li:last-child::after ,  .cafe-list li:first-child::after, 

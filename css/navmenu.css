@@ -1,0 +1,80 @@
+
+.burger {
+  display: inline-block;
+  width: 2.5em;
+  height: 1.5em;
+  position: relative;
+  cursor: pointer;
+}
+.burger span {
+  display: inline-block;
+  height: 3px;
+  width: 80%;
+  background: #000;
+  position: absolute;
+  transition: all 0.5s linear;
+}
+.burger span:first-child {
+  left: 10%;
+  top: 1%;
+}
+.burger span:nth-child(2) {
+  left: 10%;
+  top: 48%;
+}
+.burger span:last-child {
+  left: 10%;
+  bottom: 1%;
+}
+/*---*/
+span.line-active:first-child {
+  transform: rotate(40deg);
+  top: 43%;
+}
+span.line-active:nth-child(2) {
+  opacity: 0;
+}
+span.line-active:last-child {
+  transform: rotate(-40deg);
+  bottom: 45%;
+}
+.navigation {
+  margin: 5%;
+  text-align: center;
+
+}
+.navigation li {
+  display: inline-block;
+  min-width: calc(8em - 4px);
+  width: 30%;
+  margin: 1%;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.7em;
+  vertical-align: top;
+}
+.menu .contact-text {
+  border-top: 2px solid #bbb;
+  margin: 0 5%;
+  padding-top: 0.5em;
+}
+/*--CLASSES--*/
+.menu {
+  background: #dcdcdc;
+  position: fixed;
+  top: 10rem;
+  left: 2%;
+  padding: 0;
+  height: 0;
+  width: 96%;
+  overflow: auto;
+  transition: all 2s ease-out;
+  text-align: center;
+}
+.open {
+  height: calc(100% - (10rem + 4%));
+}
+.rotate {
+  animation: spin 6s infinite;
+  animation-delay: 2s;
+}

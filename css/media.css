@@ -1,10 +1,18 @@
 @media (max-width: 768px) {
+  /*nav*/
+  .phone-nav-wrp .phone {
+    display: none;
+  }
   /*ENTERTAIMENT*/
   .entertaiment-list > li:first-child {
     display: none;
   }
   .entertaiment-list > li:last-child {
     left: 0;
+    width: calc(100% - 4px);
+  }
+  /*CONTACT*/
+  .contact-list-map li, /*rooms*/ .rooms-list li {
     width: calc(100% - 4px);
   }
 

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!---CSS-->
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/navmenu.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -28,19 +29,57 @@
             <img src="img/logo.png" alt="Мельница лого">
           </h1>
         </div>
-        <nav>
-
-        </nav>
-        <div class="phone">
-          <i class="fas fa-phone"></i>
-          <span><a href="tel:+3800503032621">+380 (050) 303 26 21</a></span>
+        <div class="phone-nav-wrp">
+          <div class="phone">
+            <i class="fas fa-phone"></i>
+            <span><a href="tel:+3800503032621">+380 (050) 303 26 21</a></span>
+          </div>
+          <div class="nav-dropdown">
+            <div class="burger">
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+              <span class="burger-line"></span>
+            </div>
+            <div class="menu">
+              <ul class="navigation">
+                <li><a href="index.html" class="link">На главную</a></li>
+                <li><a href="pages/rooms.html" class="link">Проживание</a></li>
+                <li><a href="#сafe" class="link">Кафе - Бар</a></li>
+                <li><a href="#" class="link">Отдых</a></li>
+                <li><a href="#" class="link">Связь</a></li>
+                <li><a href="#" class="link">Контакты</a></li>
+              </ul>
+              <div class="contact-text">
+                <p>Улица Монастырская 6,
+                  <br>с.Коропово, Харьковская область,
+                  <br> Харьков, Украина</p>
+                <div class="phone">
+                  <i class="fas fa-phone"></i>
+                  <span><a href="tel:+3800503032621">+380 (050) 303 26 21</a></span>
+                </div>
+                <div class="contact-list-map-socials">
+                    <a href="https://www.instagram.com/melnitsa_korobov_khutor/" target="_blank">
+                      <i class="fab fa-instagram contact-icon"></i>
+                    </a>
+                  <a href="https://www.facebook.com/camping.hotel.melnitsa" target="_blank">
+                    <i class="fab fa-facebook-f contact-icon"></i>
+                  </a>
+                  <a href="http://vk.com/club67517843" target="_blank">
+                    <i class="fab fa-vk contact-icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="header-main-wrp">
-
       </div>
     </header>
     <main>
+      <section class="main-header">
+        <div class="header-main-wrp">
+
+        </div>
+      </section>
       <section class="presentation">
         <h2 class="main-title underline">Кемпинг-отель<br>"Мельница"</h2>
         <p>Приглашаем Вас на отдых в одном из самых экологически чистых и
@@ -49,35 +88,35 @@
         заряд бодрости и отличное настроение! Ведь кроме услуг проживания мы
         обеспечиваем не просто отдых, а увлекательный и незабываемый отдых. </p>
         <ul class="lists presentation-list">
-          <li>
+          <li class="wow slideInLeft" data-wow-duration="2s">
             <i class="fas fa-bed"></i>
             <a href="#"><h2 class="title">Аппартаменты и Услуги</h2></a>
             <p>На территории базы расположены уютные домики, вместимостью от 2 до 5
-            человек, с индивидуальным дизайном каждый</p>
-            <a href="#" class="button">Номера</a>
+            человек, с индивидуальным дизайном каждый.</p>
+            <a href="pages/rooms.html" class="button"> Номера</a>
           </li>
-          <li>
+          <li class="wow slideInRight" data-wow-duration="2s">
             <img src="img/pic/presentation_list_appartments.jpg" alt="Аппартаменты">
           </li>
         </ul>
       </section>
       <section class="cafe">
         <ul class="lists cafe-list">
-          <li>
+          <li class="wow slideInLeft" data-wow-duration="2s">
             <img src="img/pic/cafe_list_food.jpg" alt="Аппартаменты">
           </li>
-          <li>
+          <li class="wow slideInRight" data-wow-duration="2s">
             <i class="fas fa-utensils"></i>
             <a href="#"><h2 class="title">Кафе - Бар</h2></a>
             <p>Мы предлагаем вкусное 3х разовое питание. А так же предоставляем
                организацию свадеб, праздников, корпоративов.</p>
-            <a href="#" class="button">Зарезервировать стол</a>
+            <a href="#" class="button">Заказать стол</a>
             <a href="#" class="button">Посмотреть меню</a>
           </li>
         </ul>
       </section>
       <section class="hall-room">
-        <div class="hallbg-title">
+        <div class="hallbg-title wow zoomIn" data-wow-duration="2s">
           <div class="hall-titlebox">
             <i class="fas fa-home"></i>
             <h2 class="title underline">Банкетный зал</h2>
@@ -88,10 +127,10 @@
       </section>
       <section class="entertaiment">
         <ul class="lists entertaiment-list">
-          <li>
+          <li class="wow slideInLeft" data-wow-duration="2s">
             <img src="img/pic/entertaiment_list.jpg" alt="Развлечения">
           </li>
-          <li>
+          <li class="wow slideInRight" data-wow-duration="2s">
             <i class="fas fa-volleyball-ball"></i>
             <h2 class="title underline">Отдых и Развлечения</h2>
             <p>Вы любите активный отдых или же предпочитаете посидеть на берегу реки с интересной книгой,
@@ -115,42 +154,47 @@
           </li>
         </ul>
       </section>
-      <section class="feedback">
-        <ul class="fedback-list">
-
-        </ul>
-      </section>
       <section class="contacts">
         <h3>#melnitsa_khutor</h3>
         <h2 class="main-title underline">Следите за нами</h2>
         <ul class="contact-list-socials">
-          <li>
-            <div>
-              <img src="img/pic/contacts_instagram.jpg" alt="Инстаграм Мельница">
-            </div>
-            <a href="https://www.instagram.com/melnitsa_korobov_khutor/" target="_blank">
-              <i class="fab fa-instagram contact-icon"></i>
-              <span>instagram</span>
-            </a>
-          </li>
-          <li>
-            <div>
-              <img src="img/pic/contacts_facebook.jpg" alt="Инстаграм Мельница">
-            </div>
-            <a href="https://www.facebook.com/camping.hotel.melnitsa" target="_blank">
-              <i class="fab fa-facebook-f contact-icon"></i>
-              <span>facebook</span>
-            </a>
-          </li>
-          <li>
-            <div>
-              <img src="img/pic/contacts_vk.jpg" alt="Инстаграм Мельница">
-            </div>
-            <a href="https://www.instagram.com/melnitsa_korobov_khutor/" target="_blank">
-              <i class="fab fa-vk contact-icon"></i>
-              <span>VK</span>
-            </a>
-          </li>
+          <a href="https://www.instagram.com/melnitsa_korobov_khutor/" target="_blank">
+            <li class="wow slideInUp" data-wow-duration="1.2s">
+              <div>
+                <img src="img/pic/contacts_instagram.jpg" alt="Инстаграм Мельница">
+              </div>
+                <i class="fab fa-instagram contact-icon"></i>
+                <span>instagram</span>
+            </li>
+          </a>
+          <a href="https://www.facebook.com/camping.hotel.melnitsa" target="_blank">
+            <li class="wow slideInDown" data-wow-duration="1.2s" data-wow-delay="0.4s">
+              <div>
+                <img src="img/pic/contacts_facebook.jpg" alt="Фэйсбук Мельница">
+              </div>
+
+                <i class="fab fa-facebook-f contact-icon"></i>
+                <span>facebook</span>
+            </li>
+          </a>
+          <a href="http://vk.com/club67517843" target="_blank">
+            <li class="wow slideInUp" data-wow-duration="1.2s" data-wow-delay="0.7s">
+              <div>
+                <img src="img/pic/contacts_vk.jpg" alt="ВКонтакте Мельница">
+              </div>
+                <i class="fab fa-vk contact-icon"></i>
+                <span>VK</span>
+            </li>
+          </a>
+          <a href="pages/feedback.html" target="_blank">
+            <li class="wow slideInDown" data-wow-duration="1.2s" data-wow-delay="1s">
+              <div>
+                <img src="img/pic/contacts_feedback.jpg" alt="Отзывы Мельница">
+              </div>
+                <i class="fas fa-comment-alt contact-icon"></i>
+                <span>отзывы</span>
+            </li>
+          </a>
         </ul>
         <h4 class="underline"> Как нас найти </h4>
         <ul class="contact-list-map">
@@ -167,12 +211,53 @@
                 <i class="fas fa-phone"></i>
                 <span><a href="tel:+3800503032621">+380 (050) 303 26 21</a></span>
               </div>
+              <div class="contact-list-map-socials">
+                  <a href="https://www.instagram.com/melnitsa_korobov_khutor/" target="_blank">
+                    <i class="fab fa-instagram contact-icon"></i>
+                  </a>
+                <a href="https://www.facebook.com/camping.hotel.melnitsa" target="_blank">
+                  <i class="fab fa-facebook-f contact-icon"></i>
+                </a>
+                <a href="http://vk.com/club67517843" target="_blank">
+                  <i class="fab fa-vk contact-icon"></i>
+                </a>
+              </div>
             </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-info">
+        <div class="logo">
+          <img src="img/logo.png" alt="Мельница лого">
+        </div>
+        <div class="contact-text">
+          <p class="copyright"> &copy; Мельница 2015 - 2018</p>
+          <p>Улица Монастырская 6,
+            <br>с.Коропово, Харьковская область,
+            <br> Харьков, Украина</p>
+          <div class="phone">
+            <i class="fas fa-phone"></i>
+            <span><a href="tel:+3800503032621">+380 (050) 303 26 21</a></span>
+          </div>
+          <div class="contact-list-map-socials">
+              <a href="https://www.instagram.com/melnitsa_korobov_khutor/" target="_blank">
+                <i class="fab fa-instagram contact-icon"></i>
+              </a>
+            <a href="https://www.facebook.com/camping.hotel.melnitsa" target="_blank">
+              <i class="fab fa-facebook-f contact-icon"></i>
+            </a>
+            <a href="http://vk.com/club67517843" target="_blank">
+              <i class="fab fa-vk contact-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <p class="VP_dev">Дизайн и разработка сайта <a href="https://vladpanovs.github.io/" target="_blank">Влад Панов</a></p>
+      </div>
+    </footer>
     <!--SCRIPTS-->
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"

@@ -6,13 +6,15 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   background: #efefef;
-}
-section {
+  overflow-x: hidden;
 }
 a {
   color: #000;
   text-decoration: none;
   transition: all 0.5s linear;
+}
+section {
+  overflow: hidden;
 }
 a:visited {
 }
@@ -78,29 +80,74 @@ a:active {
 .lists li img {
   width: 100%;
 }
+/*---LINKS---*/
+a.link:hover::after,
+a.link:focus::after {
+  width: 100%;
+}
+a.link {
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.3s linear;
+}
+a.link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #c8102e;
+  transition: width 0.3s linear;
+}
+/*---PAGES GENERAL--*/
+.main-pages {
+  padding-top: 10rem;
+}
 /*--------------------
 font-family: 'Marck Script', cursive;
 red-color: #c8102e;
 ----------------------*/
-
-header {
-  min-height: 100vh;
-  height: 100vh;
-}
 .logo-nav-phone {
   background: #dcdcdc;
   width: 92%;
   margin: 2%;
   padding: 0 2%;
+  text-align: center;
   position: fixed;
   z-index: 100;
 }
-.logo, h1, nav, .phone {
+.logo, h1, nav, .phone, .phone-nav-wrp, .nav-dropdown {
   display: inline-block;
   vertical-align: middle;
 }
+.header-main-wrp  {
+  background: url("../img/bg/header_bg.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.header-main-wrp .main-title {
+  font-weight: 700;
+}
+.phone-nav-wrp {
+  width: calc(100% - 115px);
+  text-align: right;
+}
+.phone-nav-wrp .phone {
+  font-size: 1.3em;
+  margin: 10px;
+  line-height: 1.2;
+}
 /*---PRESENTATION---*/
 .presentation {
+  padding-top: 10em;
   text-align: center;
 }
 .main-title {
@@ -121,6 +168,20 @@ header {
   border: 1px solid rgba(187, 187, 187, 0.3);
   z-index: 3;
 }
+.presentation-list li:last-child {
+  position: relative;
+  z-index: 12;
+}
+.presentation-list li:last-child::after {
+  content: "";
+  width: 85%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #fff;
+  z-index: -1;
+}
 .presentation-list p {
   text-align: left;
 }
@@ -137,6 +198,19 @@ header {
   overflow: hidden;
   position: relative;
   text-align: center;
+}
+.cafe-list li:first-child {
+  position: relative;
+}
+.cafe-list li:first-child::after {
+  content: "";
+  width: 130%;
+  height: 90%;
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  border: 2px solid #fff;
+  z-index: -1;
 }
 .cafe-list li:last-child {
   padding: 5em 1%;
@@ -170,6 +244,7 @@ header {
 /*---ENTERTAIMENT---*/
 .entertaiment {
   text-align: center;
+  overflow: hidden;
 }
 .entertaiment-list > li:first-child {
   position: relative;
@@ -199,6 +274,7 @@ header {
 /*---CONTACTS---*/
 .contacts {
   text-align: center;
+  margin-bottom: 1em;
 }
 .contacts h3 {
   font-size: 0.9em;
@@ -206,30 +282,36 @@ header {
   color: #353535;
   text-transform: uppercase;
 }
+.contact-list-socials {
+  overflow: hidden;
+}
 .contact-list-socials li {
   display: inline-block;
   min-width: calc(12em - 4px);
-  width: calc(30% - 4px);
+  width: calc(23% - 4px);
   margin: 5px;
   height: 15em;
   text-transform: uppercase;
   font-weight: 300;
+}
+.contact-list-socials li > div:hover img {
+  transform: scale(1.2);
 }
 .contact-list-socials li > div {
   height: 80%;
   overflow: hidden;
   margin-bottom: 10px;
 }
-.contact-list-socials li:first-child img, .contact-list-socials li:nth-child(2) img, .contact-list-socials li:last-child img {
+.contact-list-socials li img {
   margin-top: -75px;
-  width: 401px;
   height: 500px;
+  transition: transform 0.7s linear;
 }
 .contact-list-socials a {
   line-height: 1.5;
   color: #bbb;
 }
-.contact-list-socials a:hover {
+.contact-list-socials a:hover, .contact-list-map-socials a:hover {
   color: #c8102e;
 }
 .contacts h4 {
@@ -250,6 +332,16 @@ header {
   border: 2px solid #fff;
   height: calc(100% - 4em);
   text-align: center;
+  position: relative;
+  z-index: 12;
+}
+.contact-list-map li > div::after {
+  content: "" url("../img/items/windmill_ico.png");
+  position: absolute;
+  bottom: -4px;
+  right: 10%;
+  opacity: 0.5;
+  z-index: 9;
 }
 .contact-list-map .title {
   font-family: "Montserrat";
@@ -259,6 +351,35 @@ header {
   line-height: 2;
   margin-bottom: 1.5em;
 }
+.contact-list-map-socials {
+  position: relative;
+  z-index: 12;
+}
+.contact-list-map-socials a {
+display: inline-block;
+  color: #bbb;
+  margin: 10px;
+}
+/*---FOOTER---*/
+footer {
+  padding: 2%;
+  background: #eaeaea;
+  text-align: center;
+}
+.footer-info {
+  display: inline-block;
+  border-bottom: 2px solid #bbb;
+  margin-bottom: 1em;
+}
+.copyright {
+  font-weight: 100;
+}
+.footer-info p {
+  margin-bottom: 1em;
+}
+.footer-nav {
+  text-align: center;
+}
 /*----------ICONS------------*/
 .presentation .fa-bed, .cafe .fa-utensils, .hall-room .fa-home, .entertaiment .fa-volleyball-ball {
   font-size: 3rem;
@@ -267,4 +388,49 @@ header {
 .contact-icon {
   font-size: 1.5em;
 }
+.VP_dev {
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.VP_dev a {
+  color: #fff
+}
+.VP_dev a {
+  color: #c8102e;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+.VP_dev a:hover {
+  color: #fff;
+}
 /*----------------------*/
+/*-----------------------------------PAGES---------------------------------------*/
+.rooms {
+  text-align: center;
+}
+.rooms-list li {
+  height: 30em;
+  border-radius: 10px;
+}
+.rooms-list li:first-child {
+  background: url("../img/pic/pages_rooms_one.png") no-repeat center center;
+  background-size: cover;
+}
+.rooms-list li:last-child {
+  background: url("../img/pic/pages_rooms_two.jpg") no-repeat center center;
+  background-size: cover;
+}
+.rooms-list li .title {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.rooms-list li .title::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  vertical-align: middle;
+}
