@@ -389,7 +389,7 @@ footer {
   font-size: 1.5em;
 }
 .VP_dev {
-  color: #fff;
+  color: #000;
   display: inline-block;
   font-weight: 100;
   text-transform: uppercase;
@@ -405,27 +405,35 @@ footer {
 .VP_dev a:hover {
   color: #fff;
 }
+.rooms-list-wrap .fa-male {
+  color: #c8102e;
+  margin: 5px;
+}
 /*----------------------*/
 /*-----------------------------------PAGES---------------------------------------*/
+.nav-pages {
+  background: none;
+}
+/*-----------------*/
 .rooms {
   text-align: center;
 }
+.rooms-list {
+  margin-bottom: 1em;
+}
 .rooms-list li {
-  height: 30em;
-  border-radius: 10px;
-}
-.rooms-list li:first-child {
-  background: url("../img/pic/pages_rooms_one.png") no-repeat center center;
-  background-size: cover;
-}
-.rooms-list li:last-child {
-  background: url("../img/pic/pages_rooms_two.jpg") no-repeat center center;
-  background-size: cover;
+  display: inline-block;
+  height: 20em;
+  width: calc(50% - 4px);
+  background: #dcdcdc;
+  vertical-align: top;
+  position: relative;
 }
 .rooms-list li .title {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+  margin: 0;
 }
 .rooms-list li .title::before {
   content: "";
@@ -433,4 +441,53 @@ footer {
   width: 1px;
   height: 100%;
   vertical-align: middle;
+}
+.rooms-list-one li:first-child {
+  z-index: 3;
+  background: url("../img/pic/pages_rooms_one.png") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+li.complex-drp-hidden {
+  left: -100%;
+  z-index: 2;
+  height: 0;
+  border: 1px solid #fff;
+  transition: all 2s ease-out;
+}
+li.open-drp {
+  height: calc(20em - 2px);
+  left: -10px;
+}
+li.complex-drp-hidden::after, li.complex-drp-hidden-two::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.rooms-list-wrap {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 300;
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+.rooms-list-two li:last-child {
+  z-index: 3;
+  background: url("../img/pic/pages_rooms_two.jpg") no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+}
+li.complex-drp-hidden-two {
+  right: -100%;
+  z-index: 2;
+  height: 0;
+  border: 1px solid #fff;
+  transition: all 2s ease-out;
+}
+li.open-drp-two {
+  height: calc(20em - 2px);
+  right: -10px;
 }

@@ -20,7 +20,7 @@
 }
 .burger span:nth-child(2) {
   left: 10%;
-  top: 48%;
+  top: 46%;
 }
 .burger span:last-child {
   left: 10%;
@@ -60,7 +60,7 @@ span.line-active:last-child {
 }
 /*--CLASSES--*/
 .menu {
-  background: #dcdcdc;
+  background: rgba(220, 220, 220, 0.8);
   position: fixed;
   top: 10rem;
   left: 2%;

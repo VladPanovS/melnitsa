@@ -18,8 +18,8 @@
 
   <body>
     <header>
-      <div class="logo-nav-phone">
-        <div class="logo">
+      <div class="logo-nav-phone nav-pages">
+        <div class="logo" id="logo-top">
           <a href="../index.html">
             <h1>
               <img src="../img/logo.png" alt="Мельница лого">
@@ -38,12 +38,28 @@
     <main class="main-pages">
       <section class="rooms">
         <h2 class="main-title underline">номера</h2>
-        <ul class="lists rooms-list">
-          <li>
-            <h3 class="title"><a href="#">Комплекс</a></h3>
+        <ul class="rooms-list rooms-list-one">
+          <li class="complex-drp">
+            <p class="title">Комплекс</p>
           </li>
-          <li>
-            <h3 class="title"><a href="#">Хатки мазанки</a></h3>
+          <li class="complex-drp-hidden open-drp">
+            <div class="rooms-list-wrap">
+              <p>Люкс <span><i class="fas fa-male"></i><i class="fas fa-male"></i></span> |
+                <span><i class="fas fa-male"></i><i class="fas fa-male"></i><i class="fas fa-male"></i></span> </p>
+              <p>Семейный <span><i class="fas fa-male"></i><i class="fas fa-male"></i></span></p>
+              <p>Стандарт <span><i class="fas fa-male"></i><i class="fas fa-male"></i></span> </p>
+            </div>
+          </li>
+        </ul>
+        <ul class="rooms-list rooms-list-two">
+          <li class="complex-drp-hidden-two open-drp-two">
+            <div class="rooms-list-wrap">
+              <p>Хатки-мазанки <span><i class="fas fa-male"></i><i class="fas fa-male"></i></p>
+              <p>Хатки-мазанки с украинской печью <span><i class="fas fa-male"></i><i class="fas fa-male"></i></p>
+            </div>
+          </li>
+          <li class="complex-drp-two">
+            <p class="title">Хатки-мазанки</p>
           </li>
         </ul>
       </section>
@@ -84,8 +100,8 @@
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/script.js"></script>
 
   </body>
 </html>
